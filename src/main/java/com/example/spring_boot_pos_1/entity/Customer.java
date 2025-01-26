@@ -8,6 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "customer")
+
 public class Customer {
     @Id
     @Column(name="customer_id",length = 45)
@@ -21,7 +22,7 @@ public class Customer {
     private double customerSalary;
 
 
-    @Column(name="contact_numbers",length = 10,columnDefinition = "json")
+    @Column(name="contact_numbers",length = 10)
     private String contactNumber;
     @Column(name="nic",length = 10)
     private String nic;
@@ -41,6 +42,10 @@ public class Customer {
         this.nic = nic;
         this.active = active;
     }//me all argument constracter ekk
+
+    public Customer() {
+
+    }
 
     public int getCustomerId() {
         return customerId;
