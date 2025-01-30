@@ -39,8 +39,7 @@ public class CustomerController {
             path = "/get-all-customers"
     )
     public List<CustomerDTO> getAllCustomers() {
-        List<CustomerDTO> allCustomers = customerService.getAllCustomers();
-        return allCustomers;
+        return customerService.getAllCustomers();
     }
 
 }

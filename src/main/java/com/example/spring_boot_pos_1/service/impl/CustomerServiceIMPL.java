@@ -86,6 +86,9 @@ import com.example.spring_boot_pos_1.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class CustomerServiceIMPL implements CustomerService {
 
@@ -139,5 +142,26 @@ public class CustomerServiceIMPL implements CustomerService {
             throw new RuntimeException("No data found for the given customer ID");
         }
     }
+    @Override
+    public List<CustomerDTO> getAllCustomers() {
+//        List<Customer> getAllCustomers = customerRepo.findAll();
+//        List<CustomerDTO> customerDTOList =new ArrayList<>();
+//        for(Customer customer:getAllCustomers)
+//        {
+//            CustomerDTO customerDTO = new CustomerDTO(
+//                    customer.getCustomerId(),
+//                    customer.getCustomerName(),
+//                    customer.getCustomerAddress(),
+//                    customer.getCoustomerSalary(),
+//                    customer.getContactNumber(),
+//                    customer.getNic(),
+//                    customer.isActive());
+//            customerDTOList.add(customerDTO);
+//
+//        }
+
+        return null;
+    }
+
 }
 

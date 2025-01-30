@@ -19,6 +19,7 @@ public class CustomerDTO {
         this.customerId = customerId;
     }
 
+
     public int getCustomerId() {
         return customerId;
     }
